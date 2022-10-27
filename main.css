@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body nav {
+  position: sticky;
+  top: 0;
+  background-color: grey;
+}
+
+.nav {
+  display: inline-flex;
+  height: 75px;
+  padding: 5px;
+  align-items: center;
+}
+
+.nav * {
+  vertical-align: middle;
+}
