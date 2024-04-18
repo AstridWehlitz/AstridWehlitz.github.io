@@ -1,9 +1,31 @@
 <!DOCTYPE html>
 <head>
     <title>Desmos Stuff</title>
-    <script src="https://www.desmos.com/api/v1.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts/desmos.js"></script>
 </head>
 <body>
-    <div id="calculator" style="width: 600px; height: 400px;"></div>
-    <script src="scripts/desmos.js"></script>
+    <div class="row">
+        <div class="column left">
+            <textarea id="pastein" rows="15"></textarea>
+            <button onclick="generateDesmosInjection()">Generate</button>
+        </div>
+        <div class="column right">
+           <h1>Instructions</h1>
+           <ol>
+                <li>Copy the columns with the x, y, and the reference code from the spreadsheet for your star.</li>
+                <li>Paste it into the box to the left</li>
+                <li>Hit the "Generate" button</li>
+                <li>Hightlight and copy the block of text from below</li>
+                <li>Go to your desmos graph</li>
+                <li>Right click anywhere and hit Inspect</li>
+                <li>A side or bottom bar should open up</li>
+                <li>Click on the button that says console</li>
+                <li>Hit ctrl+v and then hit enter</li>
+           </ol>
+        </div>
+    </div>
+    <div class="row">
+        <p id="output">Code will appear here</p>
+    </div>
 </body>

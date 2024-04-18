@@ -1,0 +1,35 @@
+body {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+p {
+    inline-size: 90%;
+    text-wrap: wrap;
+    white-space: pre-line;
+    overflow-wrap: break-word;
+}
+
+.row {
+    width: 100%;
+}
+
+.column {
+    float: left;
+}
+
+.left {
+    width: 25%;
+}
+  
+.right {
+    width: 75%;
+}
+
+#pastein {
+    width: 90%;
+}
+
+button {
+    width: 92%;
+}
