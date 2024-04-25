@@ -16,7 +16,7 @@ function generateDesmosInjection() {
     for (i = 0; i < inlines.length; i++) {
         xs.push(inlines[i][1]);
         ys.push(inlines[i][2]);
-        ls.push("'"+inlines[i][3]+"'("+inlines[i][0].slice(0,6)+")");
+        ls.push("'"+inlines[i][3]+"("+inlines[i][0].slice(0,6)+")'");
 
     }
 
