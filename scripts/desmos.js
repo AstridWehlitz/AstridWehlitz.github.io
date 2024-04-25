@@ -26,7 +26,7 @@ function generateDesmosInjection() {
     lines.push("pointsy = [" + ys.toString()+"];")
     lines.push("labels = [" + ls.toString()+"];")
     lines.push("for (i = 0; i < pointsx.length; i++) {")
-    lines.push("state.expressions.list.push({type:'expression',latex:'('+pointsx[i]+','+pointsy[i]+')',label:labels[i],showLabel:true});}")
+    lines.push("state.expressions.list.push({type:'expression',latex:'('+pointsx[i]+','+pointsy[i]+')', color: '#2d70b3', label:labels[i],showLabel:true});}")
     lines.push("Calc.setState(state);")
 
     var out = ""
