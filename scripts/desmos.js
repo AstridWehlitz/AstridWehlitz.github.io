@@ -23,7 +23,7 @@ function generateDesmosInjection() {
     var lines = []
 
     for (i = 0; i < xs.length; i++) {
-        lines.push("["=xs[i].toString()+", " + ys[i].toString()+", " + ls[i].toString()+"],")
+        lines.push("["+xs[i].toString()+", " + ys[i].toString()+", " + ls[i].toString()+"],")
     }
 
     var out = ""
