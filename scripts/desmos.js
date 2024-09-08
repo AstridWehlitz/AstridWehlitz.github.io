@@ -21,13 +21,10 @@ function generateDesmosInjection() {
     }
 
     var lines = []
-    lines.push("state = Calc.getState();")
-    lines.push("pointsx = [" + xs.toString()+"];")
-    lines.push("pointsy = [" + ys.toString()+"];")
-    lines.push("labels = [" + ls.toString()+"];")
-    lines.push("for (i = 0; i < pointsx.length; i++) {")
-    lines.push("state.expressions.list.push({type:'expression',latex:'('+pointsx[i]+','+pointsy[i]+')', color: '#2d70b3', label:labels[i],showLabel:true});}")
-    lines.push("Calc.setState(state);")
+
+    for (i = 0; i < xs.length; i++) {
+        lines.push("["=xs[i].toString()+", " + ys[i].toString()+", " + ls[i].toString()+"],")
+    }
 
     var out = ""
     for (i = 0; i < lines.length; i++) {
